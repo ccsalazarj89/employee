@@ -1,0 +1,4 @@
+FROM openjdk:oraclelinux8
+COPY "./target/employee-0.0.1-SNAPSHOT.war" "mvp-employee.war"
+EXPOSE 8080
+ENTRYPOINT ["java","-war","mvp-employee.war"]
